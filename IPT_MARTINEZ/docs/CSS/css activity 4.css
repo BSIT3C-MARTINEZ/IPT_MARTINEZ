@@ -1,0 +1,130 @@
+<style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #3a1b1e, #1a0508);
+            margin: 0;
+            padding: 0;
+            color: #ecf0f1; 
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #310303; 
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+        .top-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 50px; 
+            height: 50px;
+        }
+        .logo img {
+            width: 100%;
+            height: auto;
+        }
+        .title {
+            flex-grow: 1;
+            padding: 10px;
+            text-align: center;
+            background-color: #080808; 
+            color: rgb(251, 255, 255);
+            border-radius: 5px;
+            margin: 0 20px;
+        }
+        nav {
+            display: flex;
+            flex-grow: 1;
+            justify-content: flex-end;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1em;
+            padding: 10px;
+            background-color: #080808; 
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        nav ul li a:hover {
+            background-color: #1f5d7e; 
+            transform: translateY(-2px);
+        }
+
+        
+        .search-bar {
+            flex-grow: 1;
+            display: flex;
+            justify-content: flex-start;
+            margin-right: 20px;
+        }
+        .search-bar input {
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            border: 1px solid #ecf0f1;
+            border-radius: 5px;
+            background-color: #080808;
+            color: white;
+            font-size: 1em;
+        }
+        .search-bar input::placeholder {
+            color: #95a5a6;
+        }
+
+        .middle-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .name, .my-picture {
+            flex-basis: 45%;
+            border: 2px solid #000000; 
+            border-radius: 5px;
+            padding: 50px; 
+            text-align: center;
+            background-color: #34495e; 
+            transition: box-shadow 0.3s;
+            min-height: 200px; 
+        }
+        .name:hover, .my-picture:hover {
+            box-shadow: 0 0 10px rgba(41, 128, 185, 0.5); 
+        }
+        .my-picture img {
+            width: 100%; 
+            height: auto; 
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .top-row, .middle-row {
+                flex-direction: column;
+                align-items: center;
+            }
+            .info-buttons {
+                flex-direction: column;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            .name, .my-picture {
+                flex-basis: 100%; 
+                margin-bottom: 20px;
+                min-height: 150px; 
+            }
+        }
+    </style>
